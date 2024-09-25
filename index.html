@@ -73,14 +73,17 @@
     button.addEventListener('mousedown', () => {
         timeout = setTimeout(() => {
             main.style.display = 'block';
-        }, 3000); // 3000 milliseconds = 3 seconds
+        }, 2000);
     });
-    button.addEventListener('mouseup', () => {
-        clearTimeout(timeout);
-    });
-    button.addEventListener('mouseleave', () => {
-        clearTimeout(timeout);
-    });
+    function clearHold() {
+        clearTimeout(holdTimeout);
+    }
+    button.addEventListener('mousedown', startHold);
+    button.addEventListener('mouseup', clearHold);
+    button.addEventListener('mouseleave', clearHold);
+    button.addEventListener('touchstart', startHold);
+    button.addEventListener('touchend', clearHold);
+    button.addEventListener('touchcancel', clearHold);
 </script>
 </body>
 </html>
