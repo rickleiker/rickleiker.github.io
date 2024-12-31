@@ -154,51 +154,33 @@ v0.06h19.71c21.24,0,31.86,9.59,31.86,28.75c0,11.4-3.4,20.33-10.2,26.81c-6.8,6.48
 </header>
 <main>
 	<div id="gallery" class="grid">
-		<div class="grid-item">
-			<picture>
-				<img src="roselands-atlas-desktop.jpg">
-			</picture>
-		</div>
-		<div class="grid-item">
-			<picture>
-				<img src="roselands-atlas-mobile.jpg">
-			</picture>
-		</div>
-		<div class="grid-item">
-			<picture>
-				<img src="roselands-atlas-tablet.jpg">
-			</picture>
-		</div>
-		<div class="grid-item">
-			<picture>
-				<img src="center-for-self-advocacy-desktop.jpg">
-			</picture>
-		</div>
-		<div class="grid-item">
-			<picture>
-				<img src="center-for-self-advocacy-mobile.jpg">
-			</picture>
-		</div>
-		<div class="grid-item">
-			<picture>
-				<img src="center-for-self-advocacy-tablet.jpg">
-			</picture>
-		</div>
-		<div class="grid-item">
-			<picture>
-				<img src="kaleidoscope-hair-desktop.jpg">
-			</picture>
-		</div>
-		<div class="grid-item">
-			<picture>
-				<img src="kaleidoscope-hair-mobile.jpg">
-			</picture>
-		</div>
-		<div class="grid-item">
-			<picture>
-				<img src="kaleidoscope-hair-tablet.jpg">
-			</picture>
-		</div>
+		<picture class="grid-item">
+			<img src="roselands-atlas-desktop.jpg">
+		</picture>
+		<picture class="grid-item">
+			<img src="roselands-atlas-mobile.jpg">
+		</picture>
+		<picture class="grid-item">
+			<img src="roselands-atlas-tablet.jpg">
+		</picture>
+		<picture class="grid-item">
+			<img src="center-for-self-advocacy-desktop.jpg">
+		</picture>
+		<picture class="grid-item">
+			<img src="center-for-self-advocacy-mobile.jpg">
+		</picture>
+		<picture class="grid-item">
+			<img src="center-for-self-advocacy-tablet.jpg">
+		</picture>
+		<picture class="grid-item">
+			<img src="kaleidoscope-hair-desktop.jpg">
+		</picture>
+		<picture class="grid-item">
+			<img src="kaleidoscope-hair-mobile.jpg">
+		</picture>
+		<picture class="grid-item">
+			<img src="kaleidoscope-hair-tablet.jpg">
+		</picture>
 	</div>
 </main>
 <footer>
@@ -234,7 +216,7 @@ var elem = document.querySelector('.grid');
 var msnry = new Masonry( elem, {
   // options
   itemSelector: '.grid-item',
-  columnWidth: 200
+  //columnWidth: 200
 });
 
 // element argument can be a selector string
