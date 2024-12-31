@@ -14,142 +14,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <style>
-@font-face {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 700;
-    src: url(lato.eot);
-    src: local("Lato Bold"), local("Lato-Bold"), url(lato.eot?#iefix) format("embedded-opentype"), url(lato.woff2) format("woff2"), url(lato.woff) format("woff"), url(lato.ttf) format("truetype"), url(lato.svg#Lato) format("svg");
-    font-display: swap;
-}
-html {
-    -webkit-font-smoothing: antialiased;
-}
-body {
-    font-family: Lato, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 16px;
-    color: #878787;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    background: #101010;
-}
-h1 {
-    line-height: 1em;
-    letter-spacing: 1em;
-    padding-left: 1em;
-    text-transform: uppercase;
-    margin: 15px 0 0;
-    color: #878787;
-    font-size: 1rem;
-}
-header {
-    height: auto;
-    text-align: center;
-    padding: 2rem 1rem;
-}
-header button {
-    background-color: transparent;
-    border-color: transparent;
-}
-header svg {
-    fill: #878787;
-    width: 128px;
-    height: 128px;
-}
-footer {
-    padding: 2rem 1rem;
-}
-footer a {
-    color: #878787;
-    padding: 5px;
-    display: inline-block;
-}
-a:hover,
-a:focus {
-    color: #999;
-}
-footer svg {
-    width: 40px;
-    height: 32px;
-}
-footer path {
-    fill: currentcolor;
-}
-.visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
-}
-main {
-    background: #101010;
-    text-align: center;
-    padding: 0 1rem;
-    margin: 3rem auto;
-}
-main ul {
-    max-width: 220px;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: 100%;
-    -webkit-box-align: center !important;
-    -ms-flex-align: center !important;
-    align-items: center !important;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-}
-main li a:before {
-    content: "";
-    border: 0.125rem solid #878787;
-    height: 1.75rem;
-    width: 1.75rem;
-    margin: 0.375rem;
-    display: block;
-}
-main li a:hover:before,
-main li a:focus:before,
-main li a:focus-visible:before {
-    border-color: #999;
-    background: #999;
-}
-img {
-    width: 100%;
-    height: auto;
-}
-.grid-sizer,
-.grid-item {
-    width: calc(100% - 1.5rem);
-    padding: .75rem;
-}
-picture {
-    display: block;
-}
-@media (min-width:768px) {
-    .grid-sizer,
-    .grid-item {
-        width: calc(50% - 1.5rem);
-    }
-}
-@media (min-width:1200px) {
-    .grid-sizer,
-    .grid-item {
-        width: calc(33.3333% - 2rem);
-        padding: 1rem;
-    }
-}
+footer,header{padding:2rem 1rem}body,footer a,h1{color:#878787}body,main{background:#101010;text-align:center}body,header,main{text-align:center}body,img,main ul{width:100%}body,header,img{height:auto}@font-face{font-family:Lato;font-style:normal;font-weight:700;src:url(lato.eot);src:local("Lato Bold"),local("Lato-Bold"),url(lato.eot?#iefix) format("embedded-opentype"),url(lato.woff2) format("woff2"),url(lato.woff) format("woff"),url(lato.ttf) format("truetype"),url(lato.svg#Lato) format("svg");font-display:swap}html{-webkit-font-smoothing:antialiased}body{font-family:Lato,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:16px;margin:0}h1{line-height:1em;letter-spacing:1em;padding-left:1em;text-transform:uppercase;margin:15px 0 0;font-size:1rem}header button{background-color:transparent;border-color:transparent}header svg{fill:#878787;width:128px;height:128px}footer a{padding:5px;display:inline-block}a:focus,a:hover{color:#999}footer svg{width:40px;height:32px}footer path{fill:currentcolor}.visually-hidden{border:0;clip:rect(0 0 0 0);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap}main{padding:0 1rem;margin:3rem auto}main ul{max-width:220px;list-style-type:none;margin:0 auto;padding:0;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}main li a:before{content:"";border:.125rem solid #878787;height:1.75rem;width:1.75rem;margin:.375rem;display:block}main li a:focus-visible:before,main li a:focus:before,main li a:hover:before{border-color:#999;background:#999}.grid-item,.grid-sizer{width:calc(100% - 1.5rem);padding:.75rem}picture{display:block}@media (min-width:768px){.grid-item,.grid-sizer{width:calc(50% - 1.5rem)}}@media (min-width:1200px){.grid-item,.grid-sizer{width:calc(33.3333% - 2rem);padding:1rem}}
 </style>
 <link rel="stylesheet" href="photoswipe.css">
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
@@ -173,46 +38,62 @@ v0.06h19.71c21.24,0,31.86,9.59,31.86,28.75c0,11.4-3.4,20.33-10.2,26.81c-6.8,6.48
 				<img src="roselands-atlas-desktop.jpg" width="900" height="900" alt="">
 			</picture>
 		</a>
-		<picture class="grid-item">
-			<source srcset="roselands-atlas-mobile.webp" type="image/webp">
-			<source srcset="roselands-atlas-mobile.jpg" type="image/jpeg">
-			<img src="roselands-atlas-mobile.jpg" width="900" height="675" alt="">
-		</picture>
-		<picture class="grid-item">
-			<source srcset="roselands-atlas-tablet.webp" type="image/webp">
-			<source srcset="roselands-atlas-tablet.jpg" type="image/jpeg">
-			<img src="roselands-atlas-tablet.jpg" width="900" height="500" alt="">
-		</picture>
-		<picture class="grid-item">
-			<source srcset="center-for-self-advocacy-desktop.webp" type="image/webp">
-			<source srcset="center-for-self-advocacy-desktop.jpg" type="image/jpeg">
-			<img src="center-for-self-advocacy-desktop.jpg" width="900" height="900" alt="">
-		</picture>
-		<picture class="grid-item">
-			<source srcset="center-for-self-advocacy-mobile.webp" type="image/webp">
-			<source srcset="center-for-self-advocacy-mobile.jpg" type="image/jpeg">
-			<img src="center-for-self-advocacy-mobile.jpg" width="900" height="675" alt="">
-		</picture>
-		<picture class="grid-item">
-			<source srcset="center-for-self-advocacy-tablet.webp" type="image/webp">
-			<source srcset="center-for-self-advocacy-tablet.jpg" type="image/jpeg">
-			<img src="center-for-self-advocacy-tablet.jpg" width="900" height="500" alt="">
-		</picture>
-		<picture class="grid-item">
-			<source srcset="kaleidoscope-hair-desktop.webp" type="image/webp">
-			<source srcset="kaleidoscope-hair-desktop.jpg" type="image/jpeg">
-			<img src="kaleidoscope-hair-desktop.jpg" width="900" height="900" alt="">
-		</picture>
-		<picture class="grid-item">
-			<source srcset="kaleidoscope-hair-mobile.webp" type="image/webp">
-			<source srcset="kaleidoscope-hair-mobile.jpg" type="image/jpeg">
-			<img src="kaleidoscope-hair-mobile.jpg" width="900" height="675" alt="">
-		</picture>
-		<picture class="grid-item">
-			<source srcset="kaleidoscope-hair-tablet.webp" type="image/webp">
-			<source srcset="kaleidoscope-hair-tablet.jpg" type="image/jpeg">
-			<img src="kaleidoscope-hair-tablet.jpg" width="900" height="500" alt="">
-		</picture>
+		<a class="grid-item" href="roselands-atlas-mobile-full.jpg" data-pswp-width="1920" data-pswp-height="1440">
+			<picture class="grid-item">
+				<source srcset="roselands-atlas-mobile.webp" type="image/webp">
+				<source srcset="roselands-atlas-mobile.jpg" type="image/jpeg">
+				<img src="roselands-atlas-mobile.jpg" width="900" height="675" alt="">
+			</picture>
+		</a>
+		<a class="grid-item" href="roselands-atlas-tablet-full.jpg" data-pswp-width="1920" data-pswp-height="1067">
+			<picture class="grid-item">
+				<source srcset="roselands-atlas-tablet.webp" type="image/webp">
+				<source srcset="roselands-atlas-tablet.jpg" type="image/jpeg">
+				<img src="roselands-atlas-tablet.jpg" width="900" height="500" alt="">
+			</picture>
+		
+		<a class="grid-item" href="center-for-self-advocacy-desktop-full.jpg" data-pswp-width="1920" data-pswp-height="1920">
+			<picture class="grid-item">
+				<source srcset="center-for-self-advocacy-desktop.webp" type="image/webp">
+				<source srcset="center-for-self-advocacy-desktop.jpg" type="image/jpeg">
+				<img src="center-for-self-advocacy-desktop.jpg" width="900" height="900" alt="">
+			</picture>
+		</a>
+		<a class="grid-item" href="center-for-self-advocacy-mobile-full.jpg" data-pswp-width="1920" data-pswp-height="1440">
+			<picture class="grid-item">
+				<source srcset="center-for-self-advocacy-mobile.webp" type="image/webp">
+				<source srcset="center-for-self-advocacy-mobile.jpg" type="image/jpeg">
+				<img src="center-for-self-advocacy-mobile.jpg" width="900" height="675" alt="">
+			</picture>
+		</a>
+		<a class="grid-item" href="enter-for-self-advocacy-tablet-full.jpg" data-pswp-width="1920" data-pswp-height="1067">
+			<picture class="grid-item">
+				<source srcset="center-for-self-advocacy-tablet.webp" type="image/webp">
+				<source srcset="center-for-self-advocacy-tablet.jpg" type="image/jpeg">
+				<img src="center-for-self-advocacy-tablet.jpg" width="900" height="500" alt="">
+			</picture>
+		</a>
+		<a class="grid-item" href="kaleidoscope-hair-desktop-full.jpg" data-pswp-width="1920" data-pswp-height="1920">
+			<picture class="grid-item">
+				<source srcset="kaleidoscope-hair-desktop.webp" type="image/webp">
+				<source srcset="kaleidoscope-hair-desktop.jpg" type="image/jpeg">
+				<img src="kaleidoscope-hair-desktop.jpg" width="900" height="900" alt="">
+			</picture>
+		</a>
+		<a class="grid-item" href="kaleidoscope-hair-mobile-full.jpg" data-pswp-width="1920" data-pswp-height="1440">
+			<picture class="grid-item">
+				<source srcset="kaleidoscope-hair-mobile.webp" type="image/webp">
+				<source srcset="kaleidoscope-hair-mobile.jpg" type="image/jpeg">
+				<img src="kaleidoscope-hair-mobile.jpg" width="900" height="675" alt="">
+			</picture>
+		</a>
+		<a class="grid-item" href="kaleidoscope-hair-tablet-full.jpg" data-pswp-width="1920" data-pswp-height="1067">
+			<picture class="grid-item">
+				<source srcset="kaleidoscope-hair-tablet.webp" type="image/webp">
+				<source srcset="kaleidoscope-hair-tablet.jpg" type="image/jpeg">
+				<img src="kaleidoscope-hair-tablet.jpg" width="900" height="500" alt="">
+			</picture>
+		</a>
 	</div>
 </main>
 <footer>
