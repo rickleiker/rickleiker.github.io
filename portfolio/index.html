@@ -131,14 +131,25 @@ img {
 }
 .grid-sizer,
 .grid-item {
-    width: calc(33.3333% - 2rem);
-    padding: 1rem;
-}
-.grid-item--width2 {
-    width: 66.6666%;
+    width: calc(33.3333% - .5rem);
+    padding: .25rem;
 }
 picture {
     display: block;
+}
+@media (min-width:768px) {
+    .grid-sizer,
+    .grid-item {
+        width: calc(33.3333% - 1.5rem);
+        padding: .75rem;
+    }
+}
+@media (min-width:1200px) {
+    .grid-sizer,
+    .grid-item {
+        width: calc(33.3333% - 2rem);
+        padding: 1rem;
+    }
 }
 </style>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
