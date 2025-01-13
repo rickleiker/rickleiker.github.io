@@ -41,9 +41,11 @@
 	figure {
 		position: relative;
 		margin: 0;
-		height: 100vh;
-		max-height: 800px;
 		background: #eee;
+		@media (min-width:768px){
+			height: 100vh;
+			max-height: 800px;
+		}
 		figcaption {
 			position:absolute;
 			left: 2rem;
